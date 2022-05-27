@@ -2,8 +2,8 @@
 # Fioroni Tomás - @FioroniT
 # UNRN Andina - Introducción a la Ingenieria en Computación
 ################
-import pytest
+#import pytest
 
-from src.ejercicio4 import suma_lenta
+#from src.ejercicio4 import suma_lenta
 
-esto está para completar, nadie vió nada
+#esto está para completar, nadie vió nada
