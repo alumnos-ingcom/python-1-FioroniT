@@ -7,13 +7,18 @@ def suma_lenta(numero, otro_numero):
     """
     Los datos de entrada y salida deben ser numeros
     """
-    for i in range(otro_numero):
-        print(f"{numero} + 1")
-        numero = numero + 1
-        print(numero)
-    return numero
-   
-   
+    if otro_numero > 0:
+        for i in range(otro_numero):
+            print(f"{numero} + 1")
+            numero = numero + 1
+            print(numero)
+    elif otro_numero < 0:
+        otro_numero=otro_numero * -1
+        for i in range(otro_numero):
+            print(f"{numero} - 1")
+            numero = numero - 1
+            print(numero)
+    return numero   
 def principal():
     numero = int(input("Ingrese el primer numero: "))
     otro_numero = int(input("Ingrese el segundo numero: "))
@@ -21,4 +26,3 @@ def principal():
    
 if __name__ == "__main__":
     principal()
-
