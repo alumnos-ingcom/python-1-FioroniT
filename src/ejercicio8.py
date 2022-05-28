@@ -10,19 +10,12 @@ def es_primo(numero):
     """
     Los datos de entrada son números y la salida es un valor lógico
     """
-    divisor = 1
-    primo = 0
+    divisor = 2
     while divisor < numero:
-        divisor = divisor+1
-        if numero % divisor != 0:
-            primo = 1
-        else:
-            primo = 0
-            if primo == 1:
-                primo = True
-            else:
-                primo = False
-    return primo
+        if numero % divisor == 0:
+            return False
+        divisor = divisor + 1
+    return True
 
 def principal():
     """

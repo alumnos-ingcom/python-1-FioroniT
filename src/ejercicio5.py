@@ -1,7 +1,3 @@
-################
-# Fioroni Tomás - @FioroniT
-# UNRN Andina - Introducción a la Ingenieria en Computación
-################
 def division_lenta(dividendo, divisor):
     """
     Los datos de entrada y salida son números enteros
@@ -16,12 +12,10 @@ def division_lenta(dividendo, divisor):
     return cociente, resto
 
 def principal():
-    dividendo = int(input("Ingrese el dividendo: "))
-    divisor = int(input("Ingrese el divisor: "))
-    print(f"El cociente y el resto son {division_lenta(dividendo, divisor)}")
-    return division_lenta(dividendo, divisor)
+    dividendo = abs(int(input("Ingrese el dividendo: ")))
+    divisor = abs(int(input("Ingrese el divisor: ")))
+    print(division_lenta(dividendo, divisor)) 
     
    
 if __name__ == "__main__":
     principal()
-    

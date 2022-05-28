@@ -19,8 +19,8 @@ def principal():
     """
     Valores de Entrada y Salida: Numeros enteros
     """
-    numero = int(input("Ingrese un numero: "))
-    multiplo = int(input("Ingrese un multiplo: "))
+    numero = abs(int(input("Ingrese un numero: ")))
+    multiplo = abs(int(input("Ingrese un multiplo: ")))
     print(es_multiplo(numero, multiplo))
    
 if __name__ == "__main__":
