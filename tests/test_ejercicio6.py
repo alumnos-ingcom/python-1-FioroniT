@@ -13,12 +13,12 @@ def test_ordenar_mayor_a_menor():
     dos = 4
     tres = 6
     resultado = ordenar_mayor_a_menor(uno, dos, tres)
-    assert isinstance(resultado, tuple), "El resultado debe estar en variables de tipo entero"
+    assert isinstance(resultado, tuple), "El resultado debe estar en una tupla"
     assert resultado == ("6", "4", "2")
 def test_ordenar_menor_a_mayor():
     uno = 2
     dos = 4
     tres = 6
     resultado = ordenar_menor_a_mayor(uno, dos, tres)
-    assert isinstance(resultado, tuple), "El resultado debe estar en variables de tipo entero"
+    assert isinstance(resultado, tuple), "El resultado debe estar en una tupla"
     assert resultado == ("2", "4", "6")
