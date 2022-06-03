@@ -15,13 +15,17 @@ def es_multiplo(numero, multiplo):
         return True
     else:
         return False
+
+
 def principal():
     """
     Valores de Entrada y Salida: Numeros enteros
     """
     numero = abs(int(input("Ingrese un numero: ")))
     multiplo = abs(int(input("Ingrese un multiplo: ")))
-    print(es_multiplo(numero, multiplo))   
+    print(es_multiplo(numero, multiplo))
+
+
 if __name__ == "__main__":
     principal()
-    
+
