@@ -18,14 +18,18 @@ def es_palindromo(texto):
             i = largo + 5
             return False
     if i == largo:
-        return True    
+        return True
+
+
 def principal():
     """
     Valor de entrada = palabra (str)
     Valor de salida = valor lógico (True/False)
-    """ 
+    """
     texto = input("Ingrese una palabra: ").lower()
     print(es_palindromo(texto))
+
+
 if __name__ == "__main__":
     principal()
-  
+
