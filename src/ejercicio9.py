@@ -21,7 +21,9 @@ def factores_primos(numero):
         else:
             divisor = divisor + 1
     tupla_factores = tuple(lista)
-    return tupla_factores  
+    return tupla_factores
+
+
 def principal():
     """
     Valor de entrada = número (x) entero
@@ -29,6 +31,8 @@ def principal():
     """
     numero = int(input("Ingrese un número: "))
     print(factores_primos(numero))
+
+
 if __name__ == "__main__":
     principal()
 
