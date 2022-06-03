@@ -2,10 +2,12 @@
 # Fioroni Tomás - @FioroniT
 # UNRN Andina - Introducción a la Ingenieria en Computación
 ################
-
+"""
+Esta función define el signo de un numero
+"""
 def signo(numero):
     """
-    Los datos de entrada y salida son únicamente números enteros
+    Los datos de entrada y salida son únicamente int
     """
     if numero == 0:
         resultado = 0
@@ -14,11 +16,12 @@ def signo(numero):
     elif numero < 0:
         resultado = -1
     return resultado
-
-
 def principal():
+    """
+    Los valores de entrada y salida son int
+    """
     numero = int(input("Ingrese un numero: "))
-    print(signo(numero))
-   
+    print(signo(numero))  
 if __name__ == "__main__":
     principal()
+

@@ -3,7 +3,7 @@
 # UNRN Andina - Introducción a la Ingenieria en Computación
 ################
 """
-Para esta función los valores de entrada y salida serán únicamente números enteros
+En esta función los valores de entrada y salida serán int
 """
 def es_multiplo(numero, multiplo):
     """
@@ -21,8 +21,7 @@ def principal():
     """
     numero = abs(int(input("Ingrese un numero: ")))
     multiplo = abs(int(input("Ingrese un multiplo: ")))
-    print(es_multiplo(numero, multiplo))
-   
+    print(es_multiplo(numero, multiplo))   
 if __name__ == "__main__":
     principal()
-   
+    

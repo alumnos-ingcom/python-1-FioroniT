@@ -2,24 +2,30 @@
 # Fioroni Tomás - @FioroniT
 # UNRN Andina - Introducción a la Ingenieria en Computación
 ################
+"""
+Esta función verifica que la palabra es un palindromo y devuelve un bool
+"""
 def es_palindromo(texto):
     """
-    En esta función se verifica que la palabra es un palindromo y se devuelve un valor lógico
+    Esta función toma una str y devuelve un bool
     """
-    palindromo = texto[::-1]
-    if texto == palindromo:
-        texto = True
-    else:
-        texto = False
-    return texto
+    i = 0
+    largo = len(texto)
+    while i < largo:
+        if texto[i] == texto[largo - (i + 1)]:
+            i = i + 1
+        else:
+            i = largo + 5
+            return False
+    if i == largo:
+        return True    
 def principal():
     """
-    Valor de entrada = palabra (x)
+    Valor de entrada = palabra (str)
     Valor de salida = valor lógico (True/False)
-    """
-    texto = input("Ingrese una palabra para verificar si es un palindromo: ").lower()
+    """ 
+    texto = input("Ingrese una palabra: ").lower()
     print(es_palindromo(texto))
-
 if __name__ == "__main__":
     principal()
-    
+  

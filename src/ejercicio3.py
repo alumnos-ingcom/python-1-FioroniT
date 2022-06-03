@@ -14,13 +14,13 @@ def compara(numero, otro_numero):
     else:
         resultado = 0
     return resultado
-
-
 def principal():
+    """
+    
+    """
     numero = int(input("Ingrese número 1: "))
     otro_numero = int(input("Ingrese número 2: "))
     print(compara(numero, otro_numero))
-
 if __name__ == "__main__":
     principal()
 

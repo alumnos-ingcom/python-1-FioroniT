@@ -4,7 +4,8 @@
 ################
 """
 Los valores de entrada y salida deben ser numeros,
-especificamente los de salida deben coincidir con los factores primos del numero de entrada
+especificamente los de salida,
+deben coincidir con los factores primos del numero de entrada
 """
 def factores_primos(numero):
     """
@@ -26,8 +27,8 @@ def principal():
     Valor de entrada = número (x) entero
     Valor de salida = factores primos de (x)
     """
-    numero = int(input("Ingrese un número para verificar sus factores primos: "))
+    numero = int(input("Ingrese un número: "))
     print(factores_primos(numero))
-
 if __name__ == "__main__":
     principal()
+
