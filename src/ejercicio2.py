@@ -16,12 +16,16 @@ def signo(numero):
     elif numero < 0:
         resultado = -1
     return resultado
+
+
 def principal():
     """
     Los valores de entrada y salida son int
     """
     numero = int(input("Ingrese un numero: "))
-    print(signo(numero))  
+    print(signo(numero))
+
+
 if __name__ == "__main__":
     principal()
 
