@@ -20,6 +20,8 @@ def division_lenta(dividendo, divisor):
         cociente += signo_dividendo // signo_divisor
     resto = dividendo_1 - (cociente * divisor)
     return cociente, resto
+
+
 def principal():
     """
     Los datos de entrada y salida son números enteros
@@ -27,6 +29,8 @@ def principal():
     dividendo = (int(input("Ingrese el dividendo: ")))
     divisor = (int(input("Ingrese el divisor: ")))
     print(division_lenta(dividendo, divisor))
+
+
 if __name__ == "__main__":
     principal()
 
