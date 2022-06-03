@@ -2,7 +2,9 @@
 # Fioroni Tomás - @FioroniT
 # UNRN Andina - Introducción a la Ingenieria en Computación
 ################
-
+"""
+Esta función compara dos numeros e indica cual es mayor o si son iguales
+"""
 def compara(numero, otro_numero):
     """
     Los datos de entrada y salida deben ser números enteros
@@ -14,13 +16,17 @@ def compara(numero, otro_numero):
     else:
         resultado = 0
     return resultado
+
+
 def principal():
     """
-    
+    Los datos de entrada y salida deben ser int
     """
     numero = int(input("Ingrese número 1: "))
     otro_numero = int(input("Ingrese número 2: "))
     print(compara(numero, otro_numero))
+
+
 if __name__ == "__main__":
     principal()
 
