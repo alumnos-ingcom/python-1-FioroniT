@@ -15,12 +15,16 @@ def es_primo(numero):
             return False
         divisor = divisor + 1
     return True
+
+
 def principal():
     """
     Los datos de entrada son números y la salida es un valor lógico
     """
     numero = int(input("Ingrese un número para verificar si es primo: "))
     es_primo(numero)
+
+
 if __name__ == "__main__":
     principal()
 
