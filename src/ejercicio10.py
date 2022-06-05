@@ -30,7 +30,9 @@ def principal():
     Valor de salida = valor lógico (True/False)
     """
     texto = input("Ingrese una palabra: ").lower()
-    print(es_palindromo(texto))
+    (es_palindromo(texto))
+    salida = (es_palindromo(texto))
+    print(salida)
 
 
 if __name__ == "__main__":
