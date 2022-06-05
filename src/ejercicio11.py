@@ -9,17 +9,19 @@ def es_multiplo(numero, multiplo):
     """
     Esta función evalúa si el segundo número indicado es múltiplo del segundo
     """
+    retorno = None
     while multiplo >= numero:
         multiplo = multiplo - numero
     if multiplo == 0:
-        return True
+        retorno = True
     else:
-        return False
-
+        retorno = False
+    return retorno
 
 def principal():
     """
-    Valores de Entrada y Salida: Numeros enteros
+    Valores de Entrada: Numeros enteros
+    Valores de Salida: Booleanos
     """
     numero = abs(int(input("Ingrese un numero: ")))
     multiplo = abs(int(input("Ingrese un multiplo: ")))
