@@ -12,10 +12,7 @@ def es_multiplo(numero, multiplo):
     retorno = None
     while multiplo >= numero:
         multiplo = multiplo - numero
-    if multiplo == 0:
-        retorno = True
-    else:
-        retorno = False
+        retorno = multiplo == 0
     return retorno
 
 def principal():
@@ -25,7 +22,9 @@ def principal():
     """
     numero = abs(int(input("Ingrese un numero: ")))
     multiplo = abs(int(input("Ingrese un multiplo: ")))
-    print(es_multiplo(numero, multiplo))
+    (es_multiplo(numero, multiplo))
+    salida = (es_multiplo(numero, multiplo))
+    print(salida)
 
 
 if __name__ == "__main__":
