@@ -14,6 +14,9 @@ def centigrados_a_fahrenheit(centigrados):
 
 
 def fahrenheit_a_centigrados(fahrenheit):
+    """
+    Esta toma como dato de entrada una temperatura en grados y retorna el valor en fahrenheit
+    """
     resultado = (fahrenheit - 32) * 5/9
     return resultado
 
