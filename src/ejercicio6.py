@@ -3,11 +3,12 @@
 # UNRN Andina - Introducción a la Ingenieria en Computación
 ################
 """
-Los datos de entrada y salida deben ser números enteros
+Este programa toma 6 números y retorna dos tuplas, una en orden decreciente y otra creciente.
 """
 def ordenar_mayor_a_menor(uno, dos, tres):
     """
-    Los datos de entrada y salida deben ser números enteros
+    Datos de entrada: int
+    Datos de salida: tuple
     """
     if uno > dos and uno > tres:
         if dos > tres:
@@ -27,7 +28,8 @@ def ordenar_mayor_a_menor(uno, dos, tres):
 
 def ordenar_menor_a_mayor(uno, dos, tres):
     """
-    Los datos de entrada y salida deben ser números enteros
+    Datos de entrada: int
+    Datos de salida: tuple
     """
     if uno < dos and uno < tres:
         if dos < tres:
@@ -47,13 +49,18 @@ def ordenar_menor_a_mayor(uno, dos, tres):
 
 def principal():
     """
-    Los datos de entrada y salida deben ser números enteros
+    Datos de entrada: int
+    Datos de salida: tuple
     """
     uno = int(input("Inserte número 1: "))
     dos = int(input("Inserte número 2: "))
     tres = int(input("Inserte número 3: "))
-    print(ordenar_mayor_a_menor(uno, dos, tres))
-    print(ordenar_menor_a_mayor(uno, dos, tres))
+    (ordenar_mayor_a_menor(uno, dos, tres))
+    salida_1 = (ordenar_mayor_a_menor(uno, dos, tres))
+    (ordenar_menor_a_mayor(uno, dos, tres))
+    salida_2 = (ordenar_menor_a_mayor(uno, dos, tres))
+    print(salida_1)
+    print(salida_2)
 
 
 if __name__ == "__main__":
