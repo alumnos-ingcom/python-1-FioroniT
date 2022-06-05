@@ -24,8 +24,10 @@ def principal():
     """
     numero = int(input("Ingrese número 1: "))
     otro_numero = int(input("Ingrese número 2: "))
-    print(compara(numero, otro_numero))
-
+    (compara(numero, otro_numero))
+    salida = (compara(numero, otro_numero))
+    print(salida)
+    
 
 if __name__ == "__main__":
     principal()
