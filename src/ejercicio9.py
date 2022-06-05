@@ -30,7 +30,9 @@ def principal():
     Valor de salida = factores primos de (x)
     """
     numero = int(input("Ingrese un número: "))
-    print(factores_primos(numero))
+    (factores_primos(numero))
+    salida = (factores_primos(numero))
+    print(salida)
 
 
 if __name__ == "__main__":
