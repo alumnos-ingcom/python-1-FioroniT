@@ -11,15 +11,11 @@ def suma_lenta(numero, otro_numero):
     """
     if otro_numero > 0:
         for i in range(otro_numero):
-            print(f"{numero} + 1")
             numero = numero + 1
-            print(numero)
     elif otro_numero < 0:
         otro_numero = otro_numero * -1
         for i in range(otro_numero):
-            print(f"{numero} - 1")
             numero = numero - 1
-            print(numero)
     return numero
 
 
@@ -30,6 +26,8 @@ def principal():
     numero = int(input("Ingrese el primer numero: "))
     otro_numero = int(input("Ingrese el segundo numero: "))
     suma_lenta(numero, otro_numero)
+    salida = suma_lenta(numero, otro_numero)
+    print(salida)
 
 
 if __name__ == "__main__":
