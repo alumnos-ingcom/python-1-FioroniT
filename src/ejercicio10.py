@@ -10,15 +10,16 @@ def es_palindromo(texto):
     Esta función toma una str y devuelve un bool
     """
     i = 0
+    palindromo = False
     largo = len(texto)
     while i < largo:
         if texto[i] == texto[largo - (i + 1)]:
             i = i + 1
         else:
             i = largo + 5
-            return False
     if i == largo:
-        return True
+        palindromo = True
+    return palindromo
 
 
 def principal():
