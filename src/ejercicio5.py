@@ -13,7 +13,7 @@ def division_lenta(dividendo, divisor):
     cociente = 0
     dividendo_abs = abs(dividendo)
     divisor_abs = abs(divisor)
-    signo_dividendo = dividendo // dividendo_abs
+    signo_dividendo = dividendo // abs(dividendo) #Con esto consigo asignar el signo correcto a 'signo_dividendo'
     signo_divisor = divisor // divisor_abs
     while dividendo_abs >= divisor_abs:
         dividendo_abs = dividendo_abs - divisor_abs
@@ -28,7 +28,9 @@ def principal():
     """
     dividendo = (int(input("Ingrese el dividendo: ")))
     divisor = (int(input("Ingrese el divisor: ")))
-    print(division_lenta(dividendo, divisor))
+    (division_lenta(dividendo, divisor))
+    salida = (division_lenta(dividendo, divisor))
+    print(salida)
 
 
 if __name__ == "__main__":
