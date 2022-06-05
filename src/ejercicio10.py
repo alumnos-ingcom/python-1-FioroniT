@@ -19,6 +19,8 @@ def es_palindromo(texto):
             i = largo + 5
     if i == largo:
         palindromo = True
+    else:
+        palindromo = False
     return palindromo
 
 
