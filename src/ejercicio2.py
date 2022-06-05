@@ -23,7 +23,9 @@ def principal():
     Los valores de entrada y salida son int
     """
     numero = int(input("Ingrese un numero: "))
-    print(signo(numero))
+    (signo(numero))
+    salida = (signo(numero))
+    print(salida)
 
 
 if __name__ == "__main__":

@@ -28,7 +28,6 @@ def principal():
     numero_1 = float(input("Añada cantidad de grados a convertir: "))
     resultado_1 = print(f"{numero_1} C° son {centigrados_a_fahrenheit(numero_1)} F°")
     resultado_2 = print(f"{numero_1} F° son {fahrenheit_a_centigrados(numero_1)} C°")
-    return resultado_1, resultado_2
 
 
 if __name__ == "__main__":
