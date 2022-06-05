@@ -25,9 +25,12 @@ def principal():
     """
     Los datos de entrada y salida son únicamente 'int'
     """  
-    numero_1 = float(input("Añada cantidad de grados a convertir: "))
-    resultado_1 = print(f"{numero_1} C° son {centigrados_a_fahrenheit(numero_1)} F°")
-    resultado_2 = print(f"{numero_1} F° son {fahrenheit_a_centigrados(numero_1)} C°")
+    centigrados = float(input("Añada cantidad de C° a convertir: "))
+    fahrenheit = float(input("Añada cantidad de F° a convertir: "))
+    centigrados_a_fahrenheit(centigrados)
+    fahrenheit_a_centigrados(fahrenheit)
+    print(f"{centigrados} C° son {centigrados_a_fahrenheit(centigrados)} F°")
+    print(f"{fahrenheit} F° son {fahrenheit_a_centigrados(fahrenheit)} C°")
 
 
 if __name__ == "__main__":
